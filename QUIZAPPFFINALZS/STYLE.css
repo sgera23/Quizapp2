@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333333;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bg-green {
+  background-color: green !important;
+}
+
+.bg-red {
+  background-color: red !important;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: block;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+}
+
+.input-field,
+.select-field {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.select-field {
+  width: 74%;
+  background-color: #ffffff;
+}
+
+.form-error {
+  font-size: 12px;
+  color: red;
+}
+
+.timer-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.circle-container {
+  width: 75px;
+  height: 75px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.circle-content {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#choices input[type="radio"] {
+  border-radius: 5px 0 0 5px;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.choice {
+  display: flex;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 2px solid #333333;
+  border-radius: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: border-color 0.3s, color 0.3s;
+  color: #333333;
+}
+
+.choice:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.selected {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+#finalScore {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+

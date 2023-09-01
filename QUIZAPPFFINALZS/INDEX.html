@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+        <form id="registration-form">
+            <div class="input-group">
+                <label for="user-name">Username</label>
+                <input type="text" id="user-name" placeholder="UserName" class="input-field">
+                <span id="username-error" class="form-error"></span>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email" class="input-field">
+                <span id="email-error" class="form-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="category-select">Select Category</label>
+                <select id="category-select" name="category" class="select-field">
+                    <option value="11">Entertainment: Film</option>
+                    <option value="10">Entertainment: Books</option>
+                    <option value="25">Art</option>
+                    <option value="22">Geography</option>
+                </select>
+                <span id="category-error" class="form-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="number-question">Select number of questions</label>
+                <input type="number" id="number-question" class="input-field">
+                <span id="question-error" class="form-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="level-select">Select Level</label>
+                <select id="level-select" name="level" class="select-field">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <span id="level-error" class="form-error"></span>
+            </div>
+
+            <button type="submit" id="registerButton" class="submit-button">Register</button>
+        </form>
+
+        <div id="questionOptions" class="hidden">
+            <div class="timer-question">
+                <div class="circle-container">
+                    <h1 class="circle-content" id="timer">20</h1>
+                </div>
+                <h2 id="question"></h2>
+            </div>
+
+            <div id="choices"></div>
+
+            <button id="submit" onclick="displayAnswer()">Submit</button>
+            <button id="next" onclick="nextQuestion()">Next</button>
+
+            <p id="answer"></p>
+        </div>
+
+        <div id="finalScore"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
